@@ -1,0 +1,16 @@
+{
+  "name": "ecommerce-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind -i ./src/input.css -o ./css/main.css",
+    "watch": "tailwind -i ./src/input.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
