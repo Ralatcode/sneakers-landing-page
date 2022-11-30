@@ -548,10 +548,122 @@ video {
   margin-right: auto;
 }
 
+.flex{
+  display: flex;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-8{
+  width: 2rem;
+}
+
+.w-16{
+  width: 4rem;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
+}
+
+.hover\:border-4:hover{
+  border-width: 4px;
+}
+
+.hover\:border:hover{
+  border-width: 1px;
+}
+
+.hover\:border-2:hover{
+  border-width: 2px;
+}
+
+.hover\:border-PaleOrange:hover{
+  --tw-border-opacity: 1;
+  border-color: hsl(25 100% 94% / var(--tw-border-opacity));
+}
+
+.hover\:border-Orange:hover{
+  --tw-border-opacity: 1;
+  border-color: hsl(26 100% 55% / var(--tw-border-opacity));
 }
