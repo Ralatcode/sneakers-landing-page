@@ -552,6 +552,14 @@ video {
   margin-top: 1rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -736,6 +744,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .line-through{
   text-decoration-line: line-through;
 }
@@ -751,4 +764,68 @@ body {
 .hover\:border-Orange:hover{
   --tw-border-opacity: 1;
   border-color: hsl(26 100% 55% / var(--tw-border-opacity));
+}
+
+@media (min-width: 769px){
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-1{
+    margin-top: 0.25rem;
+  }
+
+  .md\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:max-w-\[450px\]{
+    max-width: 450px;
+  }
+
+  .md\:max-w-\[400px\]{
+    max-width: 400px;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .md\:text-gray-400{
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+  }
+
+  .md\:text-gray-500{
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+  }
 }
