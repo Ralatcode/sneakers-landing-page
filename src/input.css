@@ -14,6 +14,7 @@ body {
     width: 1.5rem;
     height: 3px;
     border-radius: 5px;
+    z-index: 99;
 }
 
 .menu-line::before, .menu-line::after {
@@ -23,7 +24,7 @@ body {
     width: 1.5rem;
     height: 3px;
     border-radius: 5px;
-    background-color: inherit;
+    background-color: grey;
 }
 
 .menu-line::before {
@@ -32,4 +33,22 @@ body {
 
 .menu-line::after {
     bottom: .5rem;
+}
+
+.open-menu > .menu-line {
+    background-color: transparent;
+}
+
+.open-menu > .menu-line::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.open-menu > .menu-line::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.open-menu ~ .nav-menu {
+    @apply translate-x-0;
 }
