@@ -7,3 +7,29 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
 }
+
+.menu-line {
+    position: relative;
+    display: block;
+    width: 1.5rem;
+    height: 3px;
+    border-radius: 5px;
+}
+
+.menu-line::before, .menu-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1.5rem;
+    height: 3px;
+    border-radius: 5px;
+    background-color: inherit;
+}
+
+.menu-line::before {
+    top: .5rem;
+}
+
+.menu-line::after {
+    bottom: .5rem;
+}
