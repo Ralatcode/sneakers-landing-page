@@ -797,6 +797,10 @@ body {
     display: none;
   }
 
+  .md\:w-\[400px\]{
+    width: 400px;
+  }
+
   .md\:max-w-\[400px\]{
     max-width: 400px;
   }
