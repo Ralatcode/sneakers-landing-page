@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="container mx-auto">
-        <header class="px-4 flex items-center justify-between py-5 md:px-0">
+        <header class="relative px-4 flex items-center justify-between py-5 md:px-0">
             <div class="hamburger-anchor md:hidden" id="menu-toggle">
-                <span class="menu-line bg-gray-500"></span>
+                <span class="menu-line bg-gray-500 transition-all"></span>
             </div>
             <h2 class="font-bold text-xl cursor-pointer">sneakers</h2>
-            <ul class="hidden md:flex items-center justify-evenly gap-4">
+            <ul class="absolute top-0 left-0 bg-white w-[70vw] min-h-screen flex items-center flex-col gap-6 pt-[5rem] translate-x-[-100%] md:static md:bg-transparent md:w-min md:min-h-min md:flex-row md:justify-evenly md:gap-4 md:pt-0 md:translate-x-0">
                 <li class="text-xs cursor-pointer md:text-gray-500">Collections</li>
                 <li class="text-xs cursor-pointer md:text-gray-500">Men</li>
                 <li class="text-xs cursor-pointer md:text-gray-500">Women</li>
