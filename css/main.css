@@ -564,6 +564,10 @@ video {
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .w-4{
   width: 1rem;
 }
@@ -780,6 +784,12 @@ body {
 .hover\:border-Orange:hover{
   --tw-border-opacity: 1;
   border-color: hsl(26 100% 55% / var(--tw-border-opacity));
+}
+
+@media (min-width: 480px){
+  .sm\:hidden{
+    display: none;
+  }
 }
 
 @media (min-width: 769px){
