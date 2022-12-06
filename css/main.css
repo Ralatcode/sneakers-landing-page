@@ -701,6 +701,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -838,6 +842,11 @@ body {
 .hover\:border-Orange:hover{
   --tw-border-opacity: 1;
   border-color: hsl(26 100% 55% / var(--tw-border-opacity));
+}
+
+.hover\:bg-PaleOrange:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(25 100% 94% / var(--tw-bg-opacity));
 }
 
 @media (min-width: 769px){
