@@ -849,6 +849,11 @@ body {
   background-color: hsl(25 100% 94% / var(--tw-bg-opacity));
 }
 
+.hover\:text-Orange:hover{
+  --tw-text-opacity: 1;
+  color: hsl(26 100% 55% / var(--tw-text-opacity));
+}
+
 @media (min-width: 769px){
   .md\:static{
     position: static;
