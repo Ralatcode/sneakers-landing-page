@@ -1,14 +1,15 @@
 // menu class toggle
 const menuToggle = document.querySelector('#menu-toggle');
 
-menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('open-menu');
-});
-
 // quantity increment and decrement
 const minusBtn = document.querySelector('#decrease');
 const plusBtn = document.querySelector('#increase');
 const quantity = document.querySelector('#quantity');
+
+
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('open-menu');
+});
 
 minusBtn.addEventListener('click', reduceQuantity);
 plusBtn.addEventListener('click', increaseQuantity);
