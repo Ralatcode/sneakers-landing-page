@@ -21,21 +21,22 @@ plusBtn.addEventListener('click', increaseQuantity);
 addCart.addEventListener('click', addToCart);
 
 // view and hide cart on 
-cartDiv.addEventListener('click', () => {
+cartDiv.addEventListener('click', (e) => {
+    e.stopPropagation();
     if (cart.classList.contains('hidden')) {
         cart.classList.remove('hidden');
         setTimeout(() => {
             cart.classList.remove('opacity-0');
         }, 20);
     } else {
-        cart.classList.add('opacity-0');
-        cart.addEventListener('transitionend', (e) =>{
-            cart.classList.add('hidden');
-        }, {
-            capture: false,
-            once: true,
-            passive: false
-        });
+        closeModal();
+    }
+}, false);
+
+// close modal when the outside window is clicked 
+document.addEventListener('click', (e) =>{
+    if (e.target.closest !== 'cart') {
+        closeModal();
     }
 }, false);
 
@@ -61,4 +62,15 @@ function increaseQuantity() {
     console.log(currentQty++);
     currentQty = currentQty++;
     quantity.textContent = currentQty;
+}
+
+function closeModal() {
+    cart.classList.add('opacity-0');
+    cart.addEventListener('transitionend', (e) => {
+        cart.classList.add('hidden');
+    }, {
+        capture: false,
+        once: true,
+        passive: false
+    });
 }
