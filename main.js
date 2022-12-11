@@ -5,7 +5,7 @@ const menuToggle = document.querySelector('#menu-toggle');
 const minusBtn = document.querySelector('#decrease');
 const plusBtn = document.querySelector('#increase');
 const quantity = document.querySelector('#quantity');
-const cartIcon = document.querySelector('#cart');
+const cartIcon = document.querySelector('#cart-icon');
 const addCart = document.querySelector('#add-to-cart');
 const cartDiv = document.querySelector('#cart-div')
 const cartNum = document.createElement('span');
@@ -20,6 +20,7 @@ minusBtn.addEventListener('click', reduceQuantity);
 plusBtn.addEventListener('click', increaseQuantity);
 addCart.addEventListener('click', addToCart);
 
+// view and hide cart on 
 cartDiv.addEventListener('click', () => {
     if (cart.classList.contains('hidden')) {
         cart.classList.remove('hidden');
