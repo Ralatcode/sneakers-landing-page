@@ -9,6 +9,7 @@ const cartIcon = document.querySelector('#cart');
 const addCart = document.querySelector('#add-to-cart');
 const cartDiv = document.querySelector('#cart-div')
 const cartNum = document.createElement('span');
+const cart = document.getElementById('cart');
 
 // menu toggle
 menuToggle.addEventListener('click', () => {
@@ -18,6 +19,24 @@ menuToggle.addEventListener('click', () => {
 minusBtn.addEventListener('click', reduceQuantity);
 plusBtn.addEventListener('click', increaseQuantity);
 addCart.addEventListener('click', addToCart);
+
+cartDiv.addEventListener('click', () => {
+    if (cart.classList.contains('hidden')) {
+        cart.classList.remove('hidden');
+        setTimeout(() => {
+            cart.classList.remove('opacity-0');
+        }, 20);
+    } else {
+        cart.classList.add('opacity-0');
+        cart.addEventListener('transitionend', (e) =>{
+            cart.classList.add('hidden');
+        }, {
+            capture: false,
+            once: true,
+            passive: false
+        });
+    }
+}, false);
 
 function addToCart() {
     cartNum.innerHTML = quantity.textContent;
