@@ -843,6 +843,7 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
+  cursor: pointer;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: hsl(26 100% 55% / var(--tw-bg-opacity));
