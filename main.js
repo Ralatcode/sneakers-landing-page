@@ -1,7 +1,7 @@
 // menu class toggle
 const menuToggle = document.querySelector('#menu-toggle');
 
-// quantity increment and decrement
+
 const minusBtn = document.querySelector('#decrease');
 const plusBtn = document.querySelector('#increase');
 const quantity = document.querySelector('#quantity');
@@ -46,6 +46,7 @@ function addToCart() {
     cartDiv.appendChild(cartNum);
 }
 
+// quantity decrement
 function reduceQuantity() {
     let currentQty = parseInt(quantity.textContent);
     if (currentQty <= 1) {
@@ -57,6 +58,7 @@ function reduceQuantity() {
     }
 }
 
+// quantity increment
 function increaseQuantity() {
     let currentQty = parseInt(quantity.textContent);
     console.log(currentQty++);
