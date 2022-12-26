@@ -76,6 +76,9 @@ function addItemToCart() {
     itemPrice.innerText = `$${quantity.textContent * 125}`;
     itemPrice.classList.add('item-price');
     priceDiv.append(itemQty, itemPrice);
+    deleteItem.src = './images/icon-delete.svg';
+    deleteItem.alt = 'delete-item-icon';
+    cartContent.appendChild(deleteItem);
 }
 
 function removeEmptyCartText() {
