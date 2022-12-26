@@ -929,6 +929,34 @@ body {
   gap: 0.75rem;
 }
 
+.item-Qty{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: hsl(220 14% 75% / var(--tw-text-opacity));
+}
+
+.item-price{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(219 9% 45% / var(--tw-text-opacity));
+}
+
+.checkout-btn{
+  width: 100%;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(26 100% 55% / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:border-2:hover{
   border-width: 2px;
 }

@@ -68,3 +68,15 @@ body {
 .cart-item-price-div {
     @apply flex gap-3;
 }
+
+.item-Qty {
+    @apply text-sm text-GrayishBlue;
+}
+
+.item-price {
+    @apply text-sm font-bold text-DarkGrayishBlue;
+}
+
+.checkout-btn {
+    @apply w-full py-2 bg-Orange text-white text-xs rounded-md;
+}

@@ -15,6 +15,13 @@ const cartContent = document.getElementById('cart-content');
 const emptyCartText = document.getElementById('empty-cart-text');
 const cartInnerDiv = document.createElement('div');
 const cartItemName = document.createElement('h3');
+const priceDiv = document.createElement('div');
+const itemQty = document.createElement('h3');
+const itemPrice = document.createElement('span');
+const deleteItem = document.createElement('img');
+const checkoutBtn = document.createElement('button');
+
+
 
 // menu toggle
 menuToggle.addEventListener('click', () => {
@@ -62,6 +69,13 @@ function addItemToCart() {
     cartItemName.innerText = 'Fall limited edition sneakers';
     cartItemName.classList.add('cart-item-name');
     cartInnerDiv.appendChild(cartItemName);
+    priceDiv.classList.add('cart-item-price-div');
+    cartInnerDiv.appendChild(priceDiv);
+    itemQty.innerText = `$125 x ${quantity.textContent}`;
+    itemQty.classList.add('item-Qty');
+    itemPrice.innerText = `$${quantity.textContent * 125}`;
+    itemPrice.classList.add('item-price');
+    priceDiv.append(itemQty, itemPrice);
 }
 
 function removeEmptyCartText() {
