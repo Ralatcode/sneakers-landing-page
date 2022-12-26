@@ -13,6 +13,8 @@ const cartItemImg = document.createElement('img');
 const cart = document.getElementById('cart');
 const cartContent = document.getElementById('cart-content');
 const emptyCartText = document.getElementById('empty-cart-text');
+const cartInnerDiv = document.createElement('div');
+const cartItemName = document.createElement('h3');
 
 // menu toggle
 menuToggle.addEventListener('click', () => {
@@ -56,9 +58,14 @@ function addItemToCart() {
     cartItemImg.alt = 'thumbnail 1';
     cartItemImg.classList.add('cart-image');
     cartContent.appendChild(cartItemImg);
+    cartContent.appendChild(cartInnerDiv);
+    cartItemName.innerText = 'Fall limited edition sneakers';
+    cartItemName.classList.add('cart-item-name');
+    cartInnerDiv.appendChild(cartItemName);
 }
 
 function removeEmptyCartText() {
+    cartContent.classList.remove('min-w-[290px]');
     emptyCartText.classList.add('hidden');
 }
 

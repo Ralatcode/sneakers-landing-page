@@ -60,3 +60,11 @@ body {
 .cart-image {
     @apply w-8 rounded-lg cursor-pointer;
 }
+
+.cart-item-name {
+    @apply capitalize text-sm text-GrayishBlue pr-3;
+}
+
+.cart-item-price-div {
+    @apply flex gap-3;
+}
