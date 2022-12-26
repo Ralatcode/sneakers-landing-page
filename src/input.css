@@ -56,3 +56,7 @@ body {
 .cart-counter {
     @apply absolute top-0 right-0 text-[.5rem] text-white py-[.2rem] px-[.3rem] bg-Orange rounded-full cursor-pointer;
 }
+
+.cart-image {
+    @apply w-8 rounded-lg cursor-pointer;
+}
