@@ -58,8 +58,12 @@ function addToCart() {
     cartDiv.appendChild(cartNum);
     removeEmptyCartText();
     addItemToCart();
+    checkoutBtn.innerText = 'Checkout';
+    checkoutBtn.classList.add('checkout-btn');
+    cart.appendChild(checkoutBtn);
 }
 
+// adds item details to cart modal
 function addItemToCart() {
     cartItemImg.src = './images/image-product-1-thumbnail.jpg';
     cartItemImg.alt = 'thumbnail 1';
