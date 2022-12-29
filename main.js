@@ -1,7 +1,6 @@
 // menu class toggle
 const menuToggle = document.querySelector('#menu-toggle');
 
-
 const minusBtn = document.querySelector('#decrease');
 const plusBtn = document.querySelector('#increase');
 const quantity = document.querySelector('#quantity');
@@ -47,7 +46,8 @@ cartDiv.addEventListener('click', (e) => {
 
 // close modal when the outside window is clicked 
 document.addEventListener('click', (e) =>{
-    if (e.target.closest !== 'cart') {
+    let point = e.target;
+    if (point.closest('#cart') === null) {
         closeModal();
     }
 }, false);
