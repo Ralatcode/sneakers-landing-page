@@ -86,6 +86,16 @@ function addItemToCart() {
     cartContent.appendChild(deleteItem);
 }
 
+function deleteCartItem() {
+    cartItemImg.remove();
+    cartInnerDiv.remove();
+    priceDiv.remove();
+    deleteCartItem.remove();
+    checkoutBtn.remove();
+    cartContent.classList.add('min-w-[290px]');
+    emptyCartText.classList.remove('hidden');
+}
+
 function removeEmptyCartText() {
     cartContent.classList.remove('min-w-[290px]');
     emptyCartText.classList.add('hidden');
