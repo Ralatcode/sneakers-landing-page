@@ -96,6 +96,7 @@ function deleteCartItem() {
     });
     cartContent.classList.add('min-w-[290px]');
     emptyCartText.classList.remove('hidden');
+    cartDiv.removeChild(cartNum);
 }
 
 function removeEmptyCartText() {
