@@ -52,6 +52,9 @@ document.addEventListener('click', (e) =>{
     }
 }, false);
 
+// remove cart item when delete icon is pressed
+deleteItem.addEventListener('click', deleteCartItem);
+
 function addToCart() {
     cartNum.innerHTML = quantity.textContent;
     cartNum.classList.add('cart-counter');
