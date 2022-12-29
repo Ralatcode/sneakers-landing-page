@@ -90,11 +90,10 @@ function addItemToCart() {
 }
 
 function deleteCartItem() {
-    cartItemImg.remove();
-    cartInnerDiv.remove();
-    priceDiv.remove();
-    deleteItem.remove();
-    checkoutBtn.remove();
+    let itemsToBeRemoved = [cartItemImg, cartInnerDiv, priceDiv, deleteItem, checkoutBtn];
+    itemsToBeRemoved.forEach((item) => {
+        item.remove();
+    });
     cartContent.classList.add('min-w-[290px]');
     emptyCartText.classList.remove('hidden');
 }
