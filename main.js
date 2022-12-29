@@ -82,6 +82,7 @@ function addItemToCart() {
     priceDiv.append(itemQty, itemPrice);
     deleteItem.src = './images/icon-delete.svg';
     deleteItem.alt = 'delete-item-icon';
+    deleteItem.classList.add('cursor-pointer');
     cartContent.appendChild(deleteItem);
 }
 
