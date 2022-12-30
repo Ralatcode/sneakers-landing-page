@@ -787,6 +787,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pt-\[5rem\]{
   padding-top: 5rem;
 }
