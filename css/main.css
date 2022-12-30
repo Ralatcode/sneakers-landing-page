@@ -525,9 +525,9 @@ video {
   }
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
   .container{
-    max-width: 769px;
+    max-width: 768px;
   }
 }
 
@@ -626,6 +626,10 @@ video {
 
 .w-3\/5{
   width: 60%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .min-w-\[290px\]{
@@ -753,6 +757,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-\[5rem\]{
   padding-top: 5rem;
 }
@@ -784,6 +793,11 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -976,7 +990,7 @@ body {
   color: hsl(26 100% 55% / var(--tw-text-opacity));
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
   .md\:static{
     position: static;
   }
@@ -1015,6 +1029,10 @@ body {
     width: 400px;
   }
 
+  .md\:max-w-\[90vw\]{
+    max-width: 90vw;
+  }
+
   .md\:max-w-\[400px\]{
     max-width: 400px;
   }
@@ -1040,6 +1058,29 @@ body {
     gap: 1rem;
   }
 
+  .md\:border-t-2{
+    border-top-width: 2px;
+  }
+
+  .md\:border-b-2{
+    border-bottom-width: 2px;
+  }
+
+  .md\:border-LightGrayishBlue{
+    --tw-border-opacity: 1;
+    border-color: hsl(223 64% 98% / var(--tw-border-opacity));
+  }
+
+  .md\:border-DarkGrayishBlue{
+    --tw-border-opacity: 1;
+    border-color: hsl(219 9% 45% / var(--tw-border-opacity));
+  }
+
+  .md\:border-GrayishBlue{
+    --tw-border-opacity: 1;
+    border-color: hsl(220 14% 75% / var(--tw-border-opacity));
+  }
+
   .md\:bg-transparent{
     background-color: transparent;
   }
@@ -1056,5 +1097,20 @@ body {
   .md\:text-gray-500{
     --tw-text-opacity: 1;
     color: rgb(107 114 128 / var(--tw-text-opacity));
+  }
+
+  .md\:text-LightGrayishBlue{
+    --tw-text-opacity: 1;
+    color: hsl(223 64% 98% / var(--tw-text-opacity));
+  }
+
+  .md\:text-GrayishBlue{
+    --tw-text-opacity: 1;
+    color: hsl(220 14% 75% / var(--tw-text-opacity));
+  }
+
+  .md\:text-DarkGrayishBlue{
+    --tw-text-opacity: 1;
+    color: hsl(219 9% 45% / var(--tw-text-opacity));
   }
 }
