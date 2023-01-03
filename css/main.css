@@ -897,6 +897,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 body {
   font-family: 'Kumbh Sans', sans-serif;
 }
@@ -1029,6 +1035,14 @@ body {
 .hover\:text-Orange:hover{
   --tw-text-opacity: 1;
   color: hsl(26 100% 55% / var(--tw-text-opacity));
+}
+
+.hover\:opacity-5:hover{
+  opacity: 0.05;
+}
+
+.hover\:opacity-50:hover{
+  opacity: 0.5;
 }
 
 @media (min-width: 768px){
