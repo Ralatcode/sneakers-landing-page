@@ -637,6 +637,10 @@ video {
   width: 90vw;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .min-w-\[290px\]{
   min-width: 290px;
 }
@@ -648,6 +652,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -1059,6 +1067,14 @@ body {
 
   .md\:w-full{
     width: 100%;
+  }
+
+  .md\:w-2\/5{
+    width: 40%;
+  }
+
+  .md\:w-3\/5{
+    width: 60%;
   }
 
   .md\:translate-x-0{
