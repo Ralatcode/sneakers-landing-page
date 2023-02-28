@@ -13,11 +13,11 @@
 <body>
     <div class="container mx-auto">
         <header class="relative px-4 flex items-center justify-between py-8 md:px-0 md:border-b-2 md:border-LightGrayishBlue">
-            <div class="hamburger-anchor md:hidden" id="menu-toggle">
+            <div class="hamburger-anchor md:hidden transition-all" id="menu-toggle">
                 <span class="menu-line bg-gray-500 transition-all"></span>
             </div>
             <img src="./images/logo.svg" alt="Site-logo">
-            <ul class="nav-menu absolute top-0 left-0 bg-white w-[70vw] min-h-screen flex items-center flex-col gap-6 pt-[5rem] translate-x-[-100%] md:static md:bg-transparent md:w-min md:min-h-min md:flex-row md:justify-evenly md:gap-4 md:pt-0 md:translate-x-0">
+            <ul class="nav-menu absolute top-0 left-0 bg-white w-[70vw] min-h-screen flex items-center flex-col gap-6 pt-[5rem] translate-x-[-100%] transition-all md:static md:bg-transparent md:w-min md:min-h-min md:flex-row md:justify-evenly md:gap-4 md:pt-0 md:translate-x-0">
                 <li class="text-base cursor-pointer md:text-DarkGrayishBlue">Collections</li>
                 <li class="text-base cursor-pointer md:text-DarkGrayishBlue">Men</li>
                 <li class="text-base cursor-pointer md:text-DarkGrayishBlue">Women</li>
@@ -32,7 +32,7 @@
                 <div class="hidden opacity-0 absolute top-full left-[10%] shadow-2xl bg-white p-4 transition-all md:right-0 md:left-auto" id="cart">
                     <h3 class="text-sm font-bold pb-2">Cart</h3>
                     <!-- cart-item info -->
-                    <div class="flex items-center justify-center gap-2 py-4 border-t-2 border-LightGrayishBlue min-w-[330px]" id="cart-content">
+                    <div class="flex items-center justify-center gap-2 py-4 border-t-2 border-LightGrayishBlue min-w-[290px]" id="cart-content">
                         <h3 class="text-xs py-8" id="empty-cart-text">Your cart is empty.</h3>
                     </div>
                 </div>
