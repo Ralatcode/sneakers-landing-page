@@ -16,3 +16,18 @@ Users should be able to:
 
 ### Live GitHub Page
 Check out the live gitHub page - [Click here](https://ralatcode.github.io/sneakers-landing-page/)
+
+## My Process
+
+### Built with
+
+- Semantic HTML% markup
+- CSS Custom properties
+- Flexbox
+- Mobile-first Workflow
+- [TailwindCSS](https://tailwindcss.com/) - CSS framework
+- [Lightbox](https://lokeshdhakar.com/projects/lightbox2) - JS Lightbox Script
+
+### Useful resources
+- [Tailwind-Docs](https://tailwindcss.com/docs/installation) - official Tailwind documentation to help with any Tailwind bugs or issues.
+- [Lightbox-Docs](https://github.com/lokesh/lightbox2) - Lightbox github repo with full documentation and files.
