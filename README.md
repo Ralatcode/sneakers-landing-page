@@ -21,7 +21,7 @@ Check out the live gitHub page - [Click here](https://ralatcode.github.io/sneake
 
 ### Built with
 
-- Semantic HTML% markup
+- Semantic HTML5 markup
 - CSS Custom properties
 - Flexbox
 - Mobile-first Workflow
