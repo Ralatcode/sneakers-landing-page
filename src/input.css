@@ -62,7 +62,7 @@ body {
 }
 
 .cart-item-name {
-    @apply capitalize text-sm text-GrayishBlue pr-3;
+    @apply capitalize text-DarkGrayishBlue pr-3;
 }
 
 .cart-item-price-div {
@@ -70,11 +70,11 @@ body {
 }
 
 .item-Qty {
-    @apply text-sm text-GrayishBlue;
+    @apply text-GrayishBlue;
 }
 
 .item-price {
-    @apply text-sm font-bold text-DarkGrayishBlue;
+    @apply font-bold text-DarkGrayishBlue;
 }
 
 .checkout-btn {
